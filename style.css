@@ -23,4 +23,12 @@ html {
 
 body {
   background-color: var(--clr-dark);
+  color: var(--clr-light);
+  min-height: 100vh;
+  padding: 0 3rem;
+  /* ! Grid System */
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
 }
