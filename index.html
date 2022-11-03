@@ -5,15 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- APP -->
     <main class="app">
       <!-- HEADER -->
 
-      <header>
+      <header class="header container">
         <img src="./images/Logos.svg" alt="Website logo" />
         <nav>
           <ul>
@@ -26,7 +33,7 @@
 
       <!-- HOME -->
 
-      <section id="home" class="home">
+      <section id="home" class="home container grid">
         <div class="l-side">
           <h2>
             Hi, I am Mohamed <br />
@@ -37,8 +44,8 @@
             blanditiis saepe ipsa corrupti fugit mollitia vero beatae nam ea
             repellendus!
           </p>
-          <a href="#">
-            <img src="./images/mail.svg" alt="Email icon" />
+          <a class="btn" href="#">
+            <ion-icon name="mail"></ion-icon>
             <p>hi@med.com</p>
           </a>
         </div>
@@ -49,40 +56,68 @@
       </section>
 
       <!--FEATURED WORK-->
-      <section class="fEATURED-WORK container">  
-       <div>
-         <img src="./images/Arrow 1.svg" alt="future icon">
-         <p><h3>FEATURED WORK</h3></p>
+      <section class="featured container">
+        <div class="featured-work">
+          <img src="./images/Arrow 1.svg" alt="future icon" />
+          <h3>FEATURED WORK</h3>
         </div>
-        <img src="images/devImg.png" alt="devimg"> <img src="images/dev2.png" alt="dev2">
-        <img src="images/div3.png" alt="div3"> <img src="images/di2.png" alt="di3">
+        <div class="featured-gallery">
+          <img src="images/devImg.png" alt="devimg" />
+          <img src="images/dev2.png" alt="dev2" />
+          <img src="images/div3.png" alt="div3" />
+          <img src="images/di2.png" alt="di3" />
+        </div>
       </section>
 
-        <!--Visual Explorations-->
+      <!--Visual Explorations-->
 
-     <section class="Visual Explorations">
-     <p><h3>Visual Explorations</h3></p>
-     <img src="images/div4.png" alt="div4"> <img src="images/div4 (2).png" alt="div4.2"> <img src="images/div5.png" alt="div5">
-     <img src="images/div6.png" alt="img6"> <img src="images/div7.png" alt="div7"> <img src="images/div8.png" alt="div8">
-     </section>  
+      <section class="visual container">
+        <h3>Visual Explorations</h3>
+        <div class="visual-gallery">
+          <img src="images/div4.png" alt="div4" />
+          <img src="images/div4 (2).png" alt="div4.2" />
+          <img src="images/div5.png" alt="div5" />
+          <img src="images/div6.png" alt="img6" />
+          <img src="images/div7.png" alt="div7" />
+          <img src="images/div8.png" alt="div8" />
+        </div>
+      </section>
 
       <!--Personal Projects-->
-      <section class="Personal Projects">
-        <p><h3>Personal Projects</h3></p>
-        <img src="images/div9.png" alt="div9"> <img src="images/div11.png" alt="div11"> <img src="images/div12.png" alt="div12">   
+      <section class="projects container">
+        <h3>Personal Projects</h3>
+        <div class="projects-gallery">
+          <img src="images/div9.png" alt="div9" />
+          <img src="images/div11.png" alt="div11" />
+          <img src="images/div12.png" alt="div12" />
+        </div>
       </section>
       <!--Contact Me-->
-      <section class="Contact Me">
-        <p><h3>contact me</h3></p>
-        <p>If you are looking to hire a frontend programmer, 
-          I’m currently available for freelance work</p>
-        <a href="https://email.com">
+      <section class="contact container">
+        <h3>contact me</h3>
+        <p>
+          If you are looking to hire a frontend programmer, I’m currently
+          available for freelance work
+        </p>
+        <a class="btn" href="#">
           <ion-icon name="mail"></ion-icon>
+          <p>hi@med.com</p>
         </a>
-    
       </section>
-     
 
+      <!-- Footer -->
+
+      <footer>
+        <div class="wrapper container">
+          <p>Made by <strong>MED</strong>-Copyright 2022</p>
+          <div class="social-media">
+            <ion-icon class="sm" name="logo-github"></ion-icon>
+            <ion-icon class="sm" name="logo-whatsapp"></ion-icon>
+            <ion-icon class="sm" name="logo-linkedin"></ion-icon>
+            <ion-icon class="sm" name="logo-facebook"></ion-icon>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

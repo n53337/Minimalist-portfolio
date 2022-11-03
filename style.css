@@ -114,6 +114,78 @@ nav > ul li a:hover {
   font-weight: 600;
 }
 
+.btn p {
+  color: var(--clr-white);
+}
+
 .r-side {
   grid-column: 7/12;
+}
+
+/* Mobile Header */
+
+.featured {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-work {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.featured-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.visual,
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.visual-gallery,
+.projects-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.contact {
+  margin-top: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+footer {
+  border-top: 0.1rem solid var(--clr-gray);
+  margin-top: 5rem;
+}
+
+.wrapper {
+  padding-block: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media {
+  display: flex;
+  gap: 2rem;
+}
+
+.sm svg {
+  width: 5rem;
+  font-size: 4rem;
+  height: 100px;
 }
